@@ -1,0 +1,10 @@
+get http://localhost:8080/api/todo
+
+###
+POST http://localhost:8080/api/todo 
+Content-Type: application/json
+
+{
+    "name" : "projec 1",
+    "status" : "false",
+}
