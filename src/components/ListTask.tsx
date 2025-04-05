@@ -43,9 +43,9 @@ export default function ListTask({ item, listIdx, tasks, setTasks }: IProps) {
       <div className="flex items-center gap-2 flex-1">
         <button className="cursor-pointer" onClick={handleCheck}>
           {item.isChecked ? (
-            <FaCheckCircle className="text-green-400" />
+            <FaCheckCircle className="text-red-400" />
           ) : (
-            <FaRegCircle className="text-white hover:text-green-400" />
+            <FaRegCircle className="text-white hover:text-red-400" />
           )}
         </button>
         {!isEditing ? (
